@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">MOBA Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the app</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="pro">Pro Player</option>
+        <option value="casual">Casual Player</option>
+        <option value="beginner">Beginner</option>
+        <option value="preferNot">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <p>Would you recommend MOBA to a friend?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+      <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        <p>What is your favorite feature of MOBA?</p>
+      <select id="most-like" name="mostLike" class="form-control" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="arts">Arts</option>
+        <option value="gameplay">Gameplay</option>
+        <option value="story">Stories</option>
+      </select>
+      <p>What would you like to see improved?
+<span class="clue">(Check all that apply)</span></p>
+      <label><input name="prefer" value="more-heroes" type="checkbox" class="input-checkbox">More Heroes</label>
+      <label><input name="prefer" value="balance" type="checkbox" class="input-checkbox">Balance Gameplay</label>
+      <label><input name="prefer" value="art" type="checkbox" class="input-checkbox">Artstyles</label>
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+      <label><input name="prefer" value="arcades" type="checkbox" class="input-checkbox">More arcades game</label>
+      <label><input name="prefer" value="story" type="checkbox" class="input-checkbox">Stories</label>
+      <label><input name="prefer" value="items" type="checkbox" class="input-checkbox">Improve Items</label>
+      <label><input name="prefer" value="maps" type="checkbox" class="input-checkbox">New Maps</label>
+      <label><input name="prefer" value="match" type="checkbox" class="input-checkbox">Nalance Matching</label>
+      <label><input name="prefer" value="guide" type="checkbox" class="input-checkbox">Guides</label>
+      <label><input name="prefer" value="songs" type="checkbox" class="input-checkbox">Additional Songs</label>
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
