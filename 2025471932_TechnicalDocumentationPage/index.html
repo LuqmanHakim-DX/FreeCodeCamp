@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  
+
+<body>
+    <nav id="navbar">
+      <header>Kotlin Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#Basic_Types">Basic Types</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li><a class="nav-link" href="#Conditional_Expressions">Conditional Expressions</a></li>
+          <li><a class="nav-link" href="#Functions">Functions</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+  
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Kotlin is a modern, statically typed programming language used by developers worldwide. It is designed to be completely interoperable with Java, concise, and safe.</p>
+      <p>Kotlin can be used for various types of development, including:</p>
+      <ul>
+        <li>Android mobile development</li>
+        <li>Server-side applications</li>
+        <li>Multiplatform projects</li>
+      </ul>
+      <p>To print text to the console, you use the standard library function:</p>
+      <code>println("Hello, World!")</code>
+    </section>
+
+    <section class="main-section" id="Basic_Types">
+      <header>Basic Types</header>
+      <p>In Kotlin, everything is an object in the sense that you can call member functions and properties on any variable.</p>
+      <p>Some built-in types representing numbers include:</p>
+       <ul>
+        <li><code>Int</code> for integer numbers</li>
+        <li><code>Double</code> for 64-bit floating-point numbers</li>
+      </ul>
+      <p>Unlike Java, numbers do not undergo implicit widening conversions; for example, an Int cannot be assigned directly to a Double without explicit conversion.</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Kotlin uses two different keywords to declare variables depending on whether the value is mutable or read-only.</p>
+      <p>Use the <code>val</code> keyword for a read-only variable whose value cannot be reassigned once set:</p>
+      <code>val name = "Kotlin"</code>
+      <p>Use the <code>var</code> keyword for a mutable variable whose value can change later during program execution:</p>
+      <code>var score = 0</code>
+    </section>
+
+    <section class="main-section" id="Conditional_Expressions">
+      <header>Conditional Expressions</header>
+      <p>In Kotlin, <code>if</code> is an expression, meaning it returns a value. Therefore, there is no ternary operator because an ordinary <code>if</code> works perfectly in this role.</p>
+      <p>Here is an example of using a conditional expression to assign a value:</p>
+      <code>val max = if (a > b) a else b</code>
+      <p>You can also use <code>when</code> as a more robust replacement for the traditional switch statement.</p>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Kotlin functions are declared using the <code>fun</code> keyword followed by the function name, arguments, and an optional return type.</p>
+      <p>Here is a basic function definition that takes two parameters and returns an integer:</p>
+      <code>fun sum(a: Int, b: Int): Int { return a + b }</code>
+      <p>Functions with a single expression body can also drop the curly braces and specify the body after an equality sign.</p>
+    </section>
+
+  </main>
+  
+</body>
+
+</html>
