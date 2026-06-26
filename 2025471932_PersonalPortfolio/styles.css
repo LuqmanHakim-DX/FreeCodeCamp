@@ -1,0 +1,151 @@
+/* Base styles and resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000080; /* Navy Blue */
+  z-index: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 1rem 2rem;
+}
+
+#navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #00bfff; /* Bright Blue accent on hover */
+}
+
+/* Welcome Section styles */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000033; /* Very Dark Blue */
+  color: #ffffff;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+  color: #1e90ff; /* Dodger Blue */
+}
+
+/* Projects Section styles */
+#project-section {
+  padding: 80px 20px;
+  background-color: #e6f2ff; /* Light bluish background for contrast */
+  text-align: center;
+}
+
+#project-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #000080; /* Navy Blue */
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-tile {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 51, 0.15);
+  max-width: 400px;
+  width: 100%;
+  border-top: 5px solid #1e90ff; /* Blue accent border */
+}
+
+.project-tile h3 {
+  margin-bottom: 15px;
+  color: #000033; /* Dark Blue */
+}
+
+.project-tile p {
+  color: #555555;
+}
+
+.project-tile a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #1e90ff; /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-tile a:hover {
+  color: #000080; /* Changes to Navy Blue on hover */
+}
+
+/* Contact Section styles */
+#contact {
+  padding: 60px 20px;
+  background-color: #000033; /* Dark Blue */
+  color: #ffffff;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#profile-link {
+  color: #ffffff;
+  background-color: #1e90ff; /* Blue Button */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+#profile-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  #navbar ul {
+    justify-content: center;
+  }
+}
